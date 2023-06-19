@@ -7,13 +7,10 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.document_loaders import CSVLoader,TextLoader,DirectoryLoader
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.indexes import VectorstoreIndexCreator
 from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI , OpenAIChat
-from langchain.vectorstores import FAISS , DeepLake
+from langchain.llms import OpenAI 
+from langchain.vectorstores import FAISS 
 import utils.config as config
-import json
-import tempfile
 from github import Github
 from utils.constants import *
 
